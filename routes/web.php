@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\GetCharacterListController;
+use App\Http\Controllers\Character\GetCharacterListController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
