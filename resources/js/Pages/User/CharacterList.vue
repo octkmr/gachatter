@@ -2,13 +2,13 @@
 import { Head } from '@inertiajs/vue3';
 
 defineProps({
-    test: String,
+    characterList: String,
 });
 </script>
 
 <template>
     <Head title="list" />
     <div>
-        {{ test }}
+        {{ characterList }}
     </div>
 </template>
