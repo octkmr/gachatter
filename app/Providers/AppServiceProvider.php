@@ -2,6 +2,8 @@
 
 namespace App\Providers;
 
+use App\Domain\Repositories\Character\IFetchRepository as ICharacterFetchRepository;
+use App\Infrastructure\Repositories\Character\FetchRepository as CharacterFetchRepository;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -11,7 +13,10 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register(): void
     {
-        //
+        app()->bind(
+            ICharacterFetchRepository::class,
+            CharacterFetchRepository::class
+        );
     }
 
     /**
